@@ -1,0 +1,6 @@
+{
+  "name": "Campus Lost and Found",
+  "description": "An AI/ML-based Campus Lost and Found Management System with dual-direction matching using Logistic Regression and a privacy-preserving contact request system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

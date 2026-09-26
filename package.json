@@ -1,0 +1,12 @@
+{
+  "name": "campus-lost-and-found",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node -e \"import('child_process').then(cp => cp.spawn('streamlit', ['run', 'app.py', '--server.port', '3000', '--server.address', '0.0.0.0', '--server.headless', 'true', '--browser.gatherUsageStats', 'false', '--server.enableCORS', 'false', '--server.enableXsrfProtection', 'false'], { stdio: 'inherit' }))\"",
+    "build": "python3 generate_dataset.py && python3 train_model.py",
+    "start": "streamlit run app.py --server.port 3000 --server.address 0.0.0.0 --server.headless true --browser.gatherUsageStats false --server.enableCORS false --server.enableXsrfProtection false",
+    "lint": "python3 -c \"import app, database, features, matcher, train_model, generate_dataset; print('Linting OK')\""
+  }
+}
