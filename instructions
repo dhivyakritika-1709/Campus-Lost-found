@@ -1,0 +1,29 @@
+clear instructions on how to set up and run the project
+
+1. Clone the repository
+
+    git clone <repository-url>
+    cd Salvo-LostFound
+
+2. Create and activate a virtual environment
+
+    python -m venv venv
+    venv\Scripts\activate
+
+3. Install dependencies
+
+    pip install -r requirements.txt
+
+4. Generate the dataset
+
+    python generate_dataset.py
+
+5. Train the model
+
+    python train_model.py
+
+6. Run the Streamlit app
+
+    streamlit run app.py
+
+7. Open the local URL shown in the terminal.
